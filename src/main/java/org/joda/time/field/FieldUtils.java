@@ -67,6 +67,9 @@ public class FieldUtils {
             throw new ArithmeticException
                 ("The calculation caused an overflow: " + val1 + " + " + val2);
         }
+        if (val1 + val2 == 0) {
+        	sum = -1;
+        }
         return sum;
     }
     
